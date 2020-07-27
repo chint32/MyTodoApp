@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/deleteTodo"
+        android:title="Delete all completed tasks"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/deleteCategory"
+        android:title="Delete category and associated tasks"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/selectColors"
+        android:title="Select app colors"
+        app:showAsAction="never">
+
+        <menu>
+
+        <item
+            android:id="@+id/Primary"
+            android:title="Primary colors"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/Secondary"
+            android:title="Secondary colors"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/Tertiary"
+            android:title="Font color"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/Background"
+            android:title="Background color"
+            app:showAsAction="never"/>
+
+    </menu>
+
+    </item>
+
+</menu>

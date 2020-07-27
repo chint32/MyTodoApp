@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsEditFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailsEditCard"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/edit_todo_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:hint="Title"
+                    android:inputType="textAutoComplete"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:id="@+id/detailsDescriptionLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/descriptionIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_description_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/edit_todo_detail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:hint="Description"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20dp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detailsPriorityLL"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/priorityIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_priority_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/edit_todo_detail3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:hint="Priority"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detailsDueDateLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/dueDateIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_due_date_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/edit_todo_detail4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:hint="Due Date"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detailsDueTimeLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/dueTimeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_due_time_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/edit_todo_detail5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:hint="Due Time"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detailsTimeLeftLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/timeLeftIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_time_left_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/timeLeftText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:hint="Time Left"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detailsExtraLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/reminderIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_reminder_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/reminderText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:hint="Reminder"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detailsExtra1LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/editCategoryIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_extra_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/editCategoryTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:hint="Category"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_save_edit"
+        android:layout_width="199dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@android:color/white"
+        android:visibility="visible"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Finish Task"
+            android:textSize="25sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

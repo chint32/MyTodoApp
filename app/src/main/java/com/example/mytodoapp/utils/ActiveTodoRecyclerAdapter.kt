@@ -45,15 +45,15 @@ class ActiveTodoRecyclerAdapter internal constructor(context: Context): Recycler
                 activeRv.setBackgroundColor((activeRv.context as TodoActivity).mDefaultColorSecondary)
             }
 
-            if((activeRv.context as TodoActivity).mDefaultColorTertiary != 0) {
-                title.setTextColor((title.context as TodoActivity).mDefaultColorTertiary)
-                description.setTextColor((description.context as TodoActivity).mDefaultColorTertiary)
-                dueDate.setTextColor((dueDate.context as TodoActivity).mDefaultColorTertiary)
-                dueTime.setTextColor((dueTime.context as TodoActivity).mDefaultColorTertiary)
-                timeLeft.setTextColor((timeLeft.context as TodoActivity).mDefaultColorTertiary)
-                checkBox.buttonTintList = ColorStateList.valueOf((activeRv.context as TodoActivity).mDefaultColorTertiary)
-
-            }
+//            if((activeRv.context as TodoActivity).mDefaultColorTertiary != 0) {
+//                title.setTextColor((title.context as TodoActivity).mDefaultColorTertiary)
+//                description.setTextColor((description.context as TodoActivity).mDefaultColorTertiary)
+//                dueDate.setTextColor((dueDate.context as TodoActivity).mDefaultColorTertiary)
+//                dueTime.setTextColor((dueTime.context as TodoActivity).mDefaultColorTertiary)
+//                timeLeft.setTextColor((timeLeft.context as TodoActivity).mDefaultColorTertiary)
+//                checkBox.buttonTintList = ColorStateList.valueOf((activeRv.context as TodoActivity).mDefaultColorTertiary)
+//
+//            }
 
             val bundle = Bundle()
             bundle.putString("title", title.text.toString())

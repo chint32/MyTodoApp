@@ -7,10 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CheckBox
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytodoapp.R
@@ -45,6 +42,7 @@ class ActiveTodoRecyclerAdapter internal constructor(context: Context): Recycler
                 activeRv.setBackgroundColor((activeRv.context as TodoActivity).mDefaultColorSecondary)
             }
 
+            Toast.makeText(itemView.context, "Awesome!", Toast.LENGTH_SHORT).show()
             if((activeRv.context as TodoActivity).mDefaultColorTertiary != 0) {
                 title.setTextColor((title.context as TodoActivity).mDefaultColorTertiary)
                 description.setTextColor((description.context as TodoActivity).mDefaultColorTertiary)

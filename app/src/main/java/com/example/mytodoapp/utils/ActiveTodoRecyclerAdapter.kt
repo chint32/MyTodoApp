@@ -42,7 +42,6 @@ class ActiveTodoRecyclerAdapter internal constructor(context: Context): Recycler
                 activeRv.setBackgroundColor((activeRv.context as TodoActivity).mDefaultColorSecondary)
             }
 
-            Toast.makeText(itemView.context, "Awesome!", Toast.LENGTH_SHORT).show()
             if((activeRv.context as TodoActivity).mDefaultColorTertiary != 0) {
                 title.setTextColor((title.context as TodoActivity).mDefaultColorTertiary)
                 description.setTextColor((description.context as TodoActivity).mDefaultColorTertiary)
